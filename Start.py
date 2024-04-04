@@ -14,12 +14,12 @@ cat3 = Cat()
 print(f'Кот {cat3.name} закончился')
 
 print(cat1.name)
-# print(cat2.name)
-# print(cat3.name)
+print(cat2.name)
+print(cat3.name)
 
-# cat4 = {
-#     'name': 'Василий',
-#     'age': 2
-# }
-# print(cat1.__dict__)
-# print(cat4)
+cat4 = {
+    'name': 'Василий',
+    'age': 2
+}
+print(cat1.__dict__)
+print(cat4)
