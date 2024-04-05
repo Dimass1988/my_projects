@@ -1,28 +1,19 @@
-class Cat:
-    def __init__(self, name='Кот', age=1):
-        self.name = name
-        self.age = age
-        print(f'Кот {name} родился')
+from random import randint
 
-    def __del__(self):
-        print(f'Кот {self.name} закончился')
-
-
-cat1 = Cat('Вася', 3)
-cat2 = Cat('Муся', 3)
-cat3 = Cat()
-print(f'Кот {cat3.name} закончился')
-
-print(cat1.name)
-print(cat2.name)
-print(cat3.name)
-
-cat4 = {
-    'name': 'Василий',
-    'age': 2
-}
-print(cat1.__dict__)
-print(cat4)
+player1 = input("Игрок 1, введите Ваше имя:")
+player2 = input("Игрок 2, введите Ваше имя:")
+rand = randint(1, 50)
+your_number = int(input("Введите число"))
+win = "Вы угадали число и выиграли!!!"
+print(f'Начинаем игру, Вам нужно угадать число от ')
+print(f'{player1} введите Ваше число: ')
 
 
-#test comment
+def play():
+    if your_number > rand:
+        print("Загаданное число меньше!")
+    elif your_number < rand:
+        print("Загаданное число больше!")
+    elif your_number == rand:
+        print(win)
+    return
