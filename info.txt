@@ -36,3 +36,7 @@ python .\manage.py createsuperuser
 
 + Удалить все остановленные контейнеры, networks, образы (которые не связаны хотя бы с одним контейнером)
     docker system prune -a
+
+### Compose start + build запуск с билдом
+docker-compose up -d --build
+
