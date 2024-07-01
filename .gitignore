@@ -1,0 +1,9 @@
+lib/
+Scripts/
+pyvenv.cfg
+*.log
+thumbs.db
+.DS_Store
+.env
+
+
